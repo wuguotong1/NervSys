@@ -1,0 +1,196 @@
+2018-08-21 00:23:45
+Error: PDOException caught in D:\wamp\www\NervSys\ext\pdo_mysql.php on line 209
+Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"5)' at line 1
+
+Peak: 2MB
+Memory: 2MB
+Duration: 8.883ms
+Trace: 
+#0 D:\wamp\www\NervSys\ext\pdo_mysql.php(209): PDO->prepare(' SELECT  id,sho...')
+#1 D:\wamp\www\NervSys\demo\test.php(22): ext\pdo_mysql->fetchAll(Array)
+#2 [internal function]: demo\test->index()
+#3 D:\wamp\www\NervSys\core\handler\operator.php(263): forward_static_call(Array)
+#4 D:\wamp\www\NervSys\core\handler\operator.php(155): core\handler\operator::build_caller('demo/test', Object(demo\test), 'index')
+#5 D:\wamp\www\NervSys\core\system.php(62): core\handler\operator::run_cgi()
+#6 D:\wamp\www\NervSys\api.php(54): core\system::start()
+#7 {main}
+
+
+2018-08-21 00:35:52
+Error: Exception caught in D:\wamp\www\NervSys\ext\pdo_mysql.php on line 81
+Message: implode(): Invalid arguments passed
+
+Peak: 2MB
+Memory: 2MB
+Duration: 10.9429ms
+Trace: 
+#0 [internal function]: core\handler\error::error_handler(256, 'implode(): Inva...', 'D:\\wamp\\www\\Ner...', 81, Array)
+#1 D:\wamp\www\NervSys\ext\pdo_mysql.php(81): implode('","', '2,3,4,5')
+#2 D:\wamp\www\NervSys\demo\test.php(22): ext\pdo_mysql->where(Array)
+#3 [internal function]: demo\test->index()
+#4 D:\wamp\www\NervSys\core\handler\operator.php(263): forward_static_call(Array)
+#5 D:\wamp\www\NervSys\core\handler\operator.php(155): core\handler\operator::build_caller('demo/test', Object(demo\test), 'index')
+#6 D:\wamp\www\NervSys\core\system.php(62): core\handler\operator::run_cgi()
+#7 D:\wamp\www\NervSys\api.php(54): core\system::start()
+#8 {main}
+
+
+2018-08-21 14:16:56
+Error: PDOException caught in D:\wamp\www\NervSys\ext\pdo_mysql.php on line 284
+Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id = ?' at line 1
+
+Peak: 2MB
+Memory: 2MB
+Duration: 43.267ms
+Trace: 
+#0 D:\wamp\www\NervSys\ext\pdo_mysql.php(284): PDO->prepare('UPDATE pdo_test...')
+#1 D:\wamp\www\NervSys\demo\test.php(61): ext\pdo_mysql->exec()
+#2 [internal function]: demo\test->index()
+#3 D:\wamp\www\NervSys\core\handler\operator.php(263): forward_static_call(Array)
+#4 D:\wamp\www\NervSys\core\handler\operator.php(155): core\handler\operator::build_caller('demo/test', Object(demo\test), 'index')
+#5 D:\wamp\www\NervSys\core\system.php(62): core\handler\operator::run_cgi()
+#6 D:\wamp\www\NervSys\api.php(54): core\system::start()
+#7 {main}
+
+
+2018-08-21 14:28:27
+Error: TypeError caught in D:\wamp\www\NervSys\ext\pdo_mysql.php on line 256
+Message: Argument 1 passed to ext\pdo_mysql::update() must be of the type string, array given, called in D:\wamp\www\NervSys\demo\test.php on line 61
+
+Peak: 2MB
+Memory: 2MB
+Duration: 11.2748ms
+Trace: 
+#0 D:\wamp\www\NervSys\demo\test.php(61): ext\pdo_mysql->update(Array)
+#1 [internal function]: demo\test->index()
+#2 D:\wamp\www\NervSys\core\handler\operator.php(263): forward_static_call(Array)
+#3 D:\wamp\www\NervSys\core\handler\operator.php(155): core\handler\operator::build_caller('demo/test', Object(demo\test), 'index')
+#4 D:\wamp\www\NervSys\core\system.php(62): core\handler\operator::run_cgi()
+#5 D:\wamp\www\NervSys\api.php(54): core\system::start()
+#6 {main}
+
+
+2018-08-21 14:29:11
+Error: TypeError caught in D:\wamp\www\NervSys\ext\pdo_mysql.php on line 256
+Message: Argument 1 passed to ext\pdo_mysql::update() must be of the type string, array given, called in D:\wamp\www\NervSys\demo\test.php on line 61
+
+Peak: 2MB
+Memory: 2MB
+Duration: 10.5619ms
+Trace: 
+#0 D:\wamp\www\NervSys\demo\test.php(61): ext\pdo_mysql->update(Array)
+#1 [internal function]: demo\test->index()
+#2 D:\wamp\www\NervSys\core\handler\operator.php(263): forward_static_call(Array)
+#3 D:\wamp\www\NervSys\core\handler\operator.php(155): core\handler\operator::build_caller('demo/test', Object(demo\test), 'index')
+#4 D:\wamp\www\NervSys\core\system.php(62): core\handler\operator::run_cgi()
+#5 D:\wamp\www\NervSys\api.php(54): core\system::start()
+#6 {main}
+
+
+2018-08-21 17:08:49
+Error: PDOException caught in D:\wamp\www\NervSys\ext\pdo_mysql.php on line 272
+Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '+ 1 ORDER BY id desc  LIMIT 3' at line 1
+
+Peak: 2MB
+Memory: 2MB
+Duration: 23.015ms
+Trace: 
+#0 D:\wamp\www\NervSys\ext\pdo_mysql.php(272): PDO->prepare('UPDATE pdo_test...')
+#1 D:\wamp\www\NervSys\demo\test.php(60): ext\pdo_mysql->exec()
+#2 [internal function]: demo\test->index()
+#3 D:\wamp\www\NervSys\core\handler\operator.php(263): forward_static_call(Array)
+#4 D:\wamp\www\NervSys\core\handler\operator.php(155): core\handler\operator::build_caller('demo/test', Object(demo\test), 'index')
+#5 D:\wamp\www\NervSys\core\system.php(62): core\handler\operator::run_cgi()
+#6 D:\wamp\www\NervSys\api.php(54): core\system::start()
+#7 {main}
+
+
+2018-08-21 17:09:26
+Error: PDOException caught in D:\wamp\www\NervSys\ext\pdo_mysql.php on line 273
+Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect DOUBLE value: ''score'+1'
+
+Peak: 2MB
+Memory: 2MB
+Duration: 15.2311ms
+Trace: 
+#0 D:\wamp\www\NervSys\ext\pdo_mysql.php(273): PDOStatement->execute(Array)
+#1 D:\wamp\www\NervSys\demo\test.php(60): ext\pdo_mysql->exec()
+#2 [internal function]: demo\test->index()
+#3 D:\wamp\www\NervSys\core\handler\operator.php(263): forward_static_call(Array)
+#4 D:\wamp\www\NervSys\core\handler\operator.php(155): core\handler\operator::build_caller('demo/test', Object(demo\test), 'index')
+#5 D:\wamp\www\NervSys\core\system.php(62): core\handler\operator::run_cgi()
+#6 D:\wamp\www\NervSys\api.php(54): core\system::start()
+#7 {main}
+
+
+2018-08-21 17:09:38
+Error: PDOException caught in D:\wamp\www\NervSys\ext\pdo_mysql.php on line 273
+Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect DOUBLE value: ''score'+1'
+
+Peak: 2MB
+Memory: 2MB
+Duration: 9.8982ms
+Trace: 
+#0 D:\wamp\www\NervSys\ext\pdo_mysql.php(273): PDOStatement->execute(Array)
+#1 D:\wamp\www\NervSys\demo\test.php(60): ext\pdo_mysql->exec()
+#2 [internal function]: demo\test->index()
+#3 D:\wamp\www\NervSys\core\handler\operator.php(263): forward_static_call(Array)
+#4 D:\wamp\www\NervSys\core\handler\operator.php(155): core\handler\operator::build_caller('demo/test', Object(demo\test), 'index')
+#5 D:\wamp\www\NervSys\core\system.php(62): core\handler\operator::run_cgi()
+#6 D:\wamp\www\NervSys\api.php(54): core\system::start()
+#7 {main}
+
+
+2018-08-21 17:10:10
+Error: PDOException caught in D:\wamp\www\NervSys\ext\pdo_mysql.php on line 273
+Message: SQLSTATE[22007]: Invalid datetime format: 1292 Truncated incorrect DOUBLE value: ''score'+1'
+
+Peak: 2MB
+Memory: 2MB
+Duration: 7.154ms
+Trace: 
+#0 D:\wamp\www\NervSys\ext\pdo_mysql.php(273): PDOStatement->execute(Array)
+#1 D:\wamp\www\NervSys\demo\test.php(60): ext\pdo_mysql->exec()
+#2 [internal function]: demo\test->index()
+#3 D:\wamp\www\NervSys\core\handler\operator.php(263): forward_static_call(Array)
+#4 D:\wamp\www\NervSys\core\handler\operator.php(155): core\handler\operator::build_caller('demo/test', Object(demo\test), 'index')
+#5 D:\wamp\www\NervSys\core\system.php(62): core\handler\operator::run_cgi()
+#6 D:\wamp\www\NervSys\api.php(54): core\system::start()
+#7 {main}
+
+
+2018-08-21 18:26:03
+Error: TypeError caught in D:\wamp\www\NervSys\ext\pdo_mysql.php on line 177
+Message: Argument 1 passed to ext\pdo_mysql::order() must be of the type array, string given, called in D:\wamp\www\NervSys\demo\test.php on line 64
+
+Peak: 2MB
+Memory: 2MB
+Duration: 14.086ms
+Trace: 
+#0 D:\wamp\www\NervSys\demo\test.php(64): ext\pdo_mysql->order('id', 'desc')
+#1 [internal function]: demo\test->index()
+#2 D:\wamp\www\NervSys\core\handler\operator.php(263): forward_static_call(Array)
+#3 D:\wamp\www\NervSys\core\handler\operator.php(155): core\handler\operator::build_caller('demo/test', Object(demo\test), 'index')
+#4 D:\wamp\www\NervSys\core\system.php(62): core\handler\operator::run_cgi()
+#5 D:\wamp\www\NervSys\api.php(54): core\system::start()
+#6 {main}
+
+
+2018-08-21 18:45:55
+Error: PDOException caught in D:\wamp\www\NervSys\ext\pdo_mysql.php on line 282
+Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'score = score+5age = age-1 ORDER BY id desc  LIMIT 3' at line 1
+
+Peak: 2MB
+Memory: 2MB
+Duration: 8.5342ms
+Trace: 
+#0 D:\wamp\www\NervSys\ext\pdo_mysql.php(282): PDO->prepare('score = score+5...')
+#1 D:\wamp\www\NervSys\demo\test.php(60): ext\pdo_mysql->exec()
+#2 [internal function]: demo\test->index()
+#3 D:\wamp\www\NervSys\core\handler\operator.php(263): forward_static_call(Array)
+#4 D:\wamp\www\NervSys\core\handler\operator.php(155): core\handler\operator::build_caller('demo/test', Object(demo\test), 'index')
+#5 D:\wamp\www\NervSys\core\system.php(62): core\handler\operator::run_cgi()
+#6 D:\wamp\www\NervSys\api.php(54): core\system::start()
+#7 {main}
+
+

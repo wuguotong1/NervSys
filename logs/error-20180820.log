@@ -1,0 +1,53 @@
+2018-08-20 17:49:05
+Error: ArgumentCountError caught in D:\wamp\www\NervSys\ext\pdo_mysql.php on line 157
+Message: Too few arguments to function ext\pdo_mysql::fetchAll(), 0 passed in D:\wamp\www\NervSys\demo\test.php on line 21 and at least 1 expected
+
+Peak: 2MB
+Memory: 2MB
+Duration: 9.4469ms
+Trace: 
+#0 D:\wamp\www\NervSys\demo\test.php(21): ext\pdo_mysql->fetchAll()
+#1 [internal function]: demo\test->index()
+#2 D:\wamp\www\NervSys\core\handler\operator.php(263): forward_static_call(Array)
+#3 D:\wamp\www\NervSys\core\handler\operator.php(155): core\handler\operator::build_caller('demo/test', Object(demo\test), 'index')
+#4 D:\wamp\www\NervSys\core\system.php(62): core\handler\operator::run_cgi()
+#5 D:\wamp\www\NervSys\api.php(54): core\system::start()
+#6 {main}
+
+
+2018-08-20 17:51:05
+Error: PDOException caught in D:\wamp\www\NervSys\ext\pdo_mysql.php on line 167
+Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM question WHERE parent_type_id = ?  AND question_type = ?  ORDER BY created_' at line 1
+
+Peak: 2MB
+Memory: 2MB
+Duration: 32.0699ms
+Trace: 
+#0 D:\wamp\www\NervSys\ext\pdo_mysql.php(167): PDO->prepare(' SELECT   FROM ...')
+#1 D:\wamp\www\NervSys\demo\test.php(21): ext\pdo_mysql->fetchAll()
+#2 [internal function]: demo\test->index()
+#3 D:\wamp\www\NervSys\core\handler\operator.php(263): forward_static_call(Array)
+#4 D:\wamp\www\NervSys\core\handler\operator.php(155): core\handler\operator::build_caller('demo/test', Object(demo\test), 'index')
+#5 D:\wamp\www\NervSys\core\system.php(62): core\handler\operator::run_cgi()
+#6 D:\wamp\www\NervSys\api.php(54): core\system::start()
+#7 {main}
+
+
+2018-08-20 19:26:00
+Error: PDOException caught in D:\wamp\www\NervSys\ext\pdo_mysql.php on line 209
+Message: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'where clause'
+
+Peak: 2MB
+Memory: 2MB
+Duration: 26.1369ms
+Trace: 
+#0 D:\wamp\www\NervSys\ext\pdo_mysql.php(209): PDO->prepare(' SELECT  id,sho...')
+#1 D:\wamp\www\NervSys\demo\test.php(22): ext\pdo_mysql->fetchAll(Array)
+#2 [internal function]: demo\test->index()
+#3 D:\wamp\www\NervSys\core\handler\operator.php(263): forward_static_call(Array)
+#4 D:\wamp\www\NervSys\core\handler\operator.php(155): core\handler\operator::build_caller('demo/test', Object(demo\test), 'index')
+#5 D:\wamp\www\NervSys\core\system.php(62): core\handler\operator::run_cgi()
+#6 D:\wamp\www\NervSys\api.php(54): core\system::start()
+#7 {main}
+
+

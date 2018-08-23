@@ -1,0 +1,127 @@
+2018-08-22 22:40:49
+Error: Error caught in D:\wamp\www\NervSys\demo\test.php on line 76
+Message: Call to undefined method ext\pdo_mysql::exce()
+
+Peak: 2MB
+Memory: 2MB
+Duration: 37.365ms
+Trace: 
+#0 [internal function]: demo\test->index()
+#1 D:\wamp\www\NervSys\core\handler\operator.php(263): forward_static_call(Array)
+#2 D:\wamp\www\NervSys\core\handler\operator.php(155): core\handler\operator::build_caller('demo/test', Object(demo\test), 'index')
+#3 D:\wamp\www\NervSys\core\system.php(62): core\handler\operator::run_cgi()
+#4 D:\wamp\www\NervSys\api.php(54): core\system::start()
+#5 {main}
+
+
+2018-08-22 23:33:28
+Error: Exception caught in D:\wamp\www\NervSys\ext\pdo_mysql.php on line 235
+Message: Array to string conversion
+
+Peak: 2MB
+Memory: 2MB
+Duration: 21.0979ms
+Trace: 
+#0 [internal function]: core\handler\error::error_handler(256, 'Array to string...', 'D:\\wamp\\www\\Ner...', 235, Array)
+#1 D:\wamp\www\NervSys\ext\pdo_mysql.php(235): implode(' ', Array)
+#2 D:\wamp\www\NervSys\demo\test.php(76): ext\pdo_mysql->join('sh_merchant_bas...', Array, 'right')
+#3 [internal function]: demo\test->index()
+#4 D:\wamp\www\NervSys\core\handler\operator.php(263): forward_static_call(Array)
+#5 D:\wamp\www\NervSys\core\handler\operator.php(155): core\handler\operator::build_caller('demo/test', Object(demo\test), 'index')
+#6 D:\wamp\www\NervSys\core\system.php(62): core\handler\operator::run_cgi()
+#7 D:\wamp\www\NervSys\api.php(54): core\system::start()
+#8 {main}
+
+
+2018-08-22 23:36:47
+Error: Exception caught in D:\wamp\www\NervSys\ext\pdo_mysql.php on line 235
+Message: Array to string conversion
+
+Peak: 2MB
+Memory: 2MB
+Duration: 14.6651ms
+Trace: 
+#0 [internal function]: core\handler\error::error_handler(256, 'Array to string...', 'D:\\wamp\\www\\Ner...', 235, Array)
+#1 D:\wamp\www\NervSys\ext\pdo_mysql.php(235): implode(' ', Array)
+#2 D:\wamp\www\NervSys\demo\test.php(76): ext\pdo_mysql->join('sh_merchant_bas...', Array, 'right')
+#3 [internal function]: demo\test->index()
+#4 D:\wamp\www\NervSys\core\handler\operator.php(263): forward_static_call(Array)
+#5 D:\wamp\www\NervSys\core\handler\operator.php(155): core\handler\operator::build_caller('demo/test', Object(demo\test), 'index')
+#6 D:\wamp\www\NervSys\core\system.php(62): core\handler\operator::run_cgi()
+#7 D:\wamp\www\NervSys\api.php(54): core\system::start()
+#8 {main}
+
+
+2018-08-22 23:36:49
+Error: Exception caught in D:\wamp\www\NervSys\ext\pdo_mysql.php on line 235
+Message: Array to string conversion
+
+Peak: 2MB
+Memory: 2MB
+Duration: 11.723ms
+Trace: 
+#0 [internal function]: core\handler\error::error_handler(256, 'Array to string...', 'D:\\wamp\\www\\Ner...', 235, Array)
+#1 D:\wamp\www\NervSys\ext\pdo_mysql.php(235): implode(' ', Array)
+#2 D:\wamp\www\NervSys\demo\test.php(76): ext\pdo_mysql->join('sh_merchant_bas...', Array, 'right')
+#3 [internal function]: demo\test->index()
+#4 D:\wamp\www\NervSys\core\handler\operator.php(263): forward_static_call(Array)
+#5 D:\wamp\www\NervSys\core\handler\operator.php(155): core\handler\operator::build_caller('demo/test', Object(demo\test), 'index')
+#6 D:\wamp\www\NervSys\core\system.php(62): core\handler\operator::run_cgi()
+#7 D:\wamp\www\NervSys\api.php(54): core\system::start()
+#8 {main}
+
+
+2018-08-22 23:37:46
+Error: PDOException caught in D:\wamp\www\NervSys\ext\pdo_mysql.php on line 320
+Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND a.id = b.area AND a.code = b.city inner JOIN sh_pos_information as c ON b.id' at line 1
+
+Peak: 2MB
+Memory: 2MB
+Duration: 8.9531ms
+Trace: 
+#0 D:\wamp\www\NervSys\ext\pdo_mysql.php(320): PDO->prepare(' SELECT  * FROM...')
+#1 D:\wamp\www\NervSys\demo\test.php(76): ext\pdo_mysql->fetchAll()
+#2 [internal function]: demo\test->index()
+#3 D:\wamp\www\NervSys\core\handler\operator.php(263): forward_static_call(Array)
+#4 D:\wamp\www\NervSys\core\handler\operator.php(155): core\handler\operator::build_caller('demo/test', Object(demo\test), 'index')
+#5 D:\wamp\www\NervSys\core\system.php(62): core\handler\operator::run_cgi()
+#6 D:\wamp\www\NervSys\api.php(54): core\system::start()
+#7 {main}
+
+
+2018-08-22 23:38:18
+Error: PDOException caught in D:\wamp\www\NervSys\ext\pdo_mysql.php on line 320
+Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' a.id = b.area , a.code = b.city inner JOIN sh_pos_information as c ON b.id = c.' at line 1
+
+Peak: 2MB
+Memory: 2MB
+Duration: 10.4511ms
+Trace: 
+#0 D:\wamp\www\NervSys\ext\pdo_mysql.php(320): PDO->prepare(' SELECT  * FROM...')
+#1 D:\wamp\www\NervSys\demo\test.php(76): ext\pdo_mysql->fetchAll()
+#2 [internal function]: demo\test->index()
+#3 D:\wamp\www\NervSys\core\handler\operator.php(263): forward_static_call(Array)
+#4 D:\wamp\www\NervSys\core\handler\operator.php(155): core\handler\operator::build_caller('demo/test', Object(demo\test), 'index')
+#5 D:\wamp\www\NervSys\core\system.php(62): core\handler\operator::run_cgi()
+#6 D:\wamp\www\NervSys\api.php(54): core\system::start()
+#7 {main}
+
+
+2018-08-22 23:40:12
+Error: PDOException caught in D:\wamp\www\NervSys\ext\pdo_mysql.php on line 324
+Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a.code = b.city inner JOIN sh_pos_information as c ON b.id = c.merchant_id' at line 1
+
+Peak: 2MB
+Memory: 2MB
+Duration: 20.761ms
+Trace: 
+#0 D:\wamp\www\NervSys\ext\pdo_mysql.php(324): PDO->prepare(' SELECT  * FROM...')
+#1 D:\wamp\www\NervSys\demo\test.php(76): ext\pdo_mysql->fetchAll()
+#2 [internal function]: demo\test->index()
+#3 D:\wamp\www\NervSys\core\handler\operator.php(263): forward_static_call(Array)
+#4 D:\wamp\www\NervSys\core\handler\operator.php(155): core\handler\operator::build_caller('demo/test', Object(demo\test), 'index')
+#5 D:\wamp\www\NervSys\core\system.php(62): core\handler\operator::run_cgi()
+#6 D:\wamp\www\NervSys\api.php(54): core\system::start()
+#7 {main}
+
+
